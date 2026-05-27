@@ -1,5 +1,8 @@
 # Schooling
-
+![Status](https://img.shields.io/badge/status-active-success)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![AI Workflow](https://img.shields.io/badge/focus-school%20workflow-orange)
+![Built in Real School](https://img.shields.io/badge/built%20in-real%20school-critical)
 > 让学校真实发生的工作，慢慢长成组织记忆。  
 > Let real school work slowly grow into organizational memory.
 
