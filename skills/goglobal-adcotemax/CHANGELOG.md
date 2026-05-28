@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.1 - 2026-05-28
+
+- Changed display name to "goglobal-adcotemax科德升学".
+
 ## 0.3.0 - 2026-05-28
 
 - Initial bilingual release.

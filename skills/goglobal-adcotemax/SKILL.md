@@ -3,7 +3,7 @@ name: max-global-pathway
 description: Bilingual global undergraduate pathway advisor for international high schools, bilingual schools and pathway programmes. Provides source-aware, non-agent-like guidance across UK, US, Australia, New Zealand, Hong Kong, Macau, Singapore, Malaysia, Thailand, Korea, Japan and related destinations.
 emoji: "🎓"
 user-invocable: true
-metadata: {"version":"0.3.0","maintainer":"Max","language":"zh-CN,en","category":"education,university-admissions,pathway-advising","homepage":"https://clawhub.ai/maxliu1979"}
+metadata: {"version":"0.3.1","maintainer":"Max","language":"zh-CN,en","category":"education,university-admissions,pathway-advising","homepage":"https://clawhub.ai/maxliu1979"}
 ---
 
 # Max Global Pathway Advisor  
@@ -18,7 +18,7 @@ v0.3 中英双语版
 
 ## Display Name / 显示名称
 
-**Max**
+**goglobal-adcotemax科德升学**
 
 ---
 
