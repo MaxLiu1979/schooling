@@ -1,4 +1,4 @@
-# Schooling · 十部架构
+# Schooling · 
 
 ![Status](https://img.shields.io/badge/status-active-success)
 ![License](https://img.shields.io/badge/license-MIT-blue)
