@@ -1,0 +1,229 @@
+<!doctype html>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Schooling · Ten-Bureau Architecture</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f8fafc;
+    --fg: #172033;
+    --muted: #5b6475;
+    --line: #64748b;
+    --neutral: #e2e8f0;
+    --neutral-dark: #cbd5e1;
+    --input: #bfdbfe;
+    --process: #c7d2fe;
+    --storage: #99f6e4;
+    --external: #fde68a;
+    --risk: #fecaca;
+    --accent: #6366f1;
+    --hub-bg: #e0e7ff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f172a;
+      --fg: #e5e7eb;
+      --muted: #94a3b8;
+      --line: #64748b;
+      --neutral: #1e293b;
+      --neutral-dark: #334155;
+      --input: #1e3a5f;
+      --process: #312e81;
+      --storage: #134e4a;
+      --external: #78350f;
+      --risk: #7f1d1d;
+      --accent: #818cf8;
+      --hub-bg: #1e1b4b;
+    }
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 14px/1.4 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  main {
+    max-width: 1060px;
+    margin: 32px auto;
+    padding: 0 24px;
+  }
+  svg {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .title { font-size: 22px; font-weight: 700; fill: var(--fg); }
+  .subtitle { font-size: 13px; fill: var(--muted); }
+  .layer-label { font-size: 11px; font-weight: 600; fill: var(--muted); letter-spacing: 1px; text-transform: uppercase; }
+  .dept-name { font-size: 14px; font-weight: 700; fill: var(--fg); }
+  .dept-en { font-size: 11px; fill: var(--muted); font-weight: 500; }
+  .dept-role { font-size: 11px; fill: var(--muted); }
+  .dept-role-sm { font-size: 10px; fill: var(--muted); }
+  .node { stroke: var(--line); stroke-width: 1.2; rx: 8; ry: 8; }
+  .hub { fill: var(--hub-bg); stroke: var(--accent); stroke-width: 2; }
+  .bus { fill: var(--input); }
+  .domain-student { fill: #eff6ff; }
+  .domain-brand { fill: #f5f3ff; }
+  .domain-ops { fill: #ecfdf5; }
+  @media (prefers-color-scheme: dark) {
+    .hub { fill: #1e1b4b; }
+    .bus { fill: #1e3a5f; }
+    .domain-student { fill: #172554; }
+    .domain-brand { fill: #2e1065; }
+    .domain-ops { fill: #052e16; }
+  }
+  .edge { stroke: var(--line); stroke-width: 1.5; fill: none; }
+  .edge-accent { stroke: var(--accent); stroke-width: 2; fill: none; }
+  .edge-bus { stroke: #60a5fa; stroke-width: 1; fill: none; stroke-dasharray: 4 3; }
+  .zone { fill: none; stroke: var(--line); stroke-width: 1; stroke-dasharray: 6 5; rx: 10; ry: 10; }
+  .legend-key { font-size: 10px; fill: var(--muted); }
+  .principles { font-size: 11px; fill: var(--muted); }
+</style>
+<main>
+  <svg viewBox="0 0 980 820" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="980" height="820" fill="var(--bg)" rx="12" />
+
+    <!-- 标题区 -->
+    <text x="490" y="36" text-anchor="middle" class="title">🏛️ Schooling · 十部架构</text>
+    <text x="490" y="56" text-anchor="middle" class="subtitle">Ten-Bureau Framework — AI Agent 驱动的学校治理操作系统</text>
+
+    <!-- ==================== 层标签 ==================== -->
+    <text x="28" y="92" class="layer-label">战略中枢 · Strategic Core</text>
+    <text x="28" y="240" class="layer-label">路由层 · Routing Layer</text>
+    <text x="28" y="380" class="layer-label">执行层 · Execution Layer</text>
+
+    <!-- ==================== 分隔虚线 ==================== -->
+    <line x1="28" y1="98" x2="952" y2="98" stroke="var(--line)" stroke-width="0.5" opacity="0.3" />
+    <line x1="28" y1="246" x2="952" y2="246" stroke="var(--line)" stroke-width="0.5" opacity="0.3" />
+    <line x1="28" y1="386" x2="952" y2="386" stroke="var(--line)" stroke-width="0.5" opacity="0.3" />
+
+    <!-- ==================== Layer 1: 校务办公室 ==================== -->
+    <rect x="310" y="108" width="360" height="112" class="node hub" />
+    <text x="490" y="135" text-anchor="middle" font-size="20">🏛️</text>
+    <text x="490" y="158" text-anchor="middle" class="dept-name">校务办公室 · Executive Office</text>
+    <text x="490" y="176" text-anchor="middle" class="dept-role">总控总参 · 战略排序 · 风险判断 · 向上管理</text>
+    <text x="490" y="194" text-anchor="middle" class="dept-en">核心输出：每日驾驶舱 · 请示汇报 · 三件最重要的事</text>
+    <text x="490" y="210" text-anchor="middle" class="dept-en">人格：校长判断 / 考成 / 稳局</text>
+
+    <!-- 校务办 → 通讯枢纽 连线 -->
+    <line x1="490" y1="220" x2="490" y2="272" class="edge-accent" />
+    <polygon points="490,278 485,268 495,268" fill="var(--accent)" />
+
+    <!-- ==================== Layer 2: 通讯枢纽 ==================== -->
+    <rect x="120" y="278" width="740" height="80" class="node bus" />
+    <text x="490" y="308" text-anchor="middle" font-size="18">📡</text>
+    <text x="490" y="328" text-anchor="middle" class="dept-name">通讯枢纽 · Communication Hub</text>
+    <text x="490" y="345" text-anchor="middle" class="dept-role">信息路由中枢 — 接收 · 分拣 · 路由 · 归档</text>
+    <text x="490" y="360" text-anchor="middle" class="dept-en">所有跨部门通信、群消息分发、信息摘要均经此流转</text>
+
+    <!-- ==================== Layer 3: 执行部门 ==================== -->
+
+    <!-- 域标签 -->
+    <text x="80" y="404" style="font-size:11px;font-weight:600;fill:var(--muted)">🎓 教学与学生域</text>
+    <text x="380" y="404" style="font-size:11px;font-weight:600;fill:var(--muted)">📢 品牌与表达域</text>
+    <text x="680" y="404" style="font-size:11px;font-weight:600;fill:var(--muted)">⚙️ 运营与支撑域</text>
+
+    <!-- 域背景框 -->
+    <rect x="60" y="414" width="285" height="340" class="zone domain-student" />
+    <rect x="360" y="414" width="270" height="340" class="zone domain-brand" />
+    <rect x="645" y="414" width="300" height="340" class="zone domain-ops" />
+
+    <!-- ====== 教学与学生域 ====== -->
+
+    <!-- 教务处 -->
+    <rect x="80" y="430" width="245" height="90" class="node" fill="var(--input)" />
+    <text x="202" y="457" text-anchor="middle" font-size="18">📚</text>
+    <text x="202" y="477" text-anchor="middle" class="dept-name">教务处 · Academic Affairs</text>
+    <text x="202" y="495" text-anchor="middle" class="dept-role">教学管理 · 考试 · 课程 · 认证 · 学业交付</text>
+    <text x="202" y="511" text-anchor="middle" class="dept-en">对接：亚洲班 · A-Level · 普高课程</text>
+
+    <!-- 学生处 -->
+    <rect x="80" y="540" width="245" height="90" class="node" fill="var(--process)" />
+    <text x="202" y="567" text-anchor="middle" font-size="18">🛡️</text>
+    <text x="202" y="587" text-anchor="middle" class="dept-name">学生处 · Student Affairs</text>
+    <text x="202" y="605" text-anchor="middle" class="dept-role">学生管理 · 德育 · 家校沟通 · 留生</text>
+    <text x="202" y="621" text-anchor="middle" class="dept-en">对接：班主任 · 家长群 · 学生管理</text>
+
+    <!-- ====== 品牌与表达域 ====== -->
+
+    <!-- 品牌宣传部 -->
+    <rect x="380" y="430" width="230" height="90" class="node" fill="var(--process)" />
+    <text x="495" y="457" text-anchor="middle" font-size="18">🎙️</text>
+    <text x="495" y="477" text-anchor="middle" class="dept-name">品牌宣传部 · Brand & Communications</text>
+    <text x="495" y="495" text-anchor="middle" class="dept-role">对外表达 · 招生口径 · 品牌风险管控</text>
+    <text x="495" y="511" text-anchor="middle" class="dept-en">对接：家长理解 · 合作方沟通 · 媒体</text>
+
+    <!-- 内容创作中心 -->
+    <rect x="380" y="540" width="230" height="90" class="node" fill="var(--neutral)" />
+    <text x="495" y="567" text-anchor="middle" font-size="18">✍️</text>
+    <text x="495" y="587" text-anchor="middle" class="dept-name">内容创作中心 · Content Creation</text>
+    <text x="495" y="605" text-anchor="middle" class="dept-role">公众号 · 故事 · 视频脚本 · 口播 · 金句</text>
+    <text x="495" y="621" text-anchor="middle" class="dept-en">对接：品牌内容 · 校区故事 · 视频制作</text>
+
+    <!-- ====== 运营与支撑域 ====== -->
+
+    <!-- 任务管理处 -->
+    <rect x="665" y="430" width="260" height="76" class="node" fill="var(--storage)" />
+    <text x="795" y="455" text-anchor="middle" font-size="16">📋</text>
+    <text x="795" y="473" text-anchor="middle" class="dept-name">任务管理处 · Task Management</text>
+    <text x="795" y="491" text-anchor="middle" class="dept-role">任务分解 · 截止日期 · 验收 · 复盘追踪</text>
+
+    <!-- 财务与总务处 -->
+    <rect x="665" y="520" width="260" height="76" class="node" fill="var(--risk)" />
+    <text x="795" y="545" text-anchor="middle" font-size="16">💰</text>
+    <text x="795" y="563" text-anchor="middle" class="dept-name">财务与总务处 · Finance & General Affairs</text>
+    <text x="795" y="581" text-anchor="middle" class="dept-role">预算 · 决算 · 人事成本 · 后勤保障</text>
+
+    <!-- 校历与日程管理处 -->
+    <rect x="665" y="610" width="125" height="76" class="node" fill="var(--external)" />
+    <text x="727" y="635" text-anchor="middle" font-size="16">⏰</text>
+    <text x="727" y="653" text-anchor="middle" class="dept-name">校历与日程管理处</text>
+    <text x="727" y="669" text-anchor="middle" class="dept-role-sm">Calendar & Scheduling</text>
+
+    <!-- 教育技术中心 -->
+    <rect x="800" y="610" width="125" height="76" class="node" fill="var(--neutral)" />
+    <text x="862" y="635" text-anchor="middle" font-size="16">🔧</text>
+    <text x="862" y="653" text-anchor="middle" class="dept-name">教育技术中心</text>
+    <text x="862" y="669" text-anchor="middle" class="dept-role-sm">EdTech · AI · 数据 · 排障</text>
+
+    <!-- ==================== 通讯枢纽 → 各执行部门连线 ==================== -->
+
+    <line x1="380" y1="358" x2="202" y2="430" class="edge-bus" />
+    <line x1="320" y1="358" x2="202" y2="540" class="edge-bus" />
+    <line x1="490" y1="358" x2="495" y2="430" class="edge-bus" />
+    <line x1="490" y1="358" x2="495" y2="540" class="edge-bus" />
+    <line x1="610" y1="358" x2="795" y2="430" class="edge-bus" />
+    <line x1="610" y1="358" x2="795" y2="520" class="edge-bus" />
+    <line x1="580" y1="360" x2="727" y2="610" class="edge-bus" />
+    <line x1="580" y1="365" x2="862" y2="610" class="edge-bus" />
+
+    <!-- ==================== 跨域虚线连接：校务办 → 关键部门 ==================== -->
+    <path d="M 310 160 Q 260 160 260 250 Q 260 400 202 430" class="edge" stroke-dasharray="5 4" />
+    <path d="M 310 180 Q 240 180 240 400 Q 240 500 202 540" class="edge" stroke-dasharray="5 4" />
+    <text x="156" y="380" class="legend-key" transform="rotate(-90,156,380)">校长直通</text>
+    <line x1="490" y1="220" x2="495" y2="430" class="edge" stroke-dasharray="5 4" />
+    <path d="M 670 180 Q 770 180 770 400 Q 770 570 727 610" class="edge" stroke-dasharray="5 4" />
+
+    <!-- ==================== 底部：核心原则 ==================== -->
+    <rect x="80" y="710" width="820" height="52" fill="var(--neutral)" rx="6" stroke="var(--line)" stroke-width="0.5" />
+    <text x="490" y="728" text-anchor="middle" font-size="12" font-weight="600" fill="var(--fg)">⚖️ 三大铁律</text>
+    <text x="490" y="748" text-anchor="middle" class="principles">
+      AI辅助三原则（认知 · 使用 · 价值） · 信息溯源（凡输出必有来源） · 时间确认
+    </text>
+
+    <!-- ==================== 图例 ==================== -->
+    <rect x="80" y="770" width="820" height="35" fill="none" />
+    <text x="80" y="788" class="legend-key">图例</text>
+    <rect x="120" y="776" width="14" height="14" fill="var(--hub-bg)" stroke="var(--accent)" stroke-width="1.5" rx="3" />
+    <text x="140" y="788" class="legend-key">战略中枢</text>
+    <rect x="220" y="776" width="14" height="14" fill="var(--input)" stroke="var(--line)" stroke-width="1" rx="3" />
+    <text x="240" y="788" class="legend-key">信息路由</text>
+    <line x1="330" y1="783" x2="370" y2="783" stroke="var(--line)" stroke-width="1.5" stroke-dasharray="5 4" />
+    <text x="376" y="788" class="legend-key">校长直通</text>
+    <line x1="460" y1="783" x2="500" y2="783" stroke="#60a5fa" stroke-width="1" stroke-dasharray="4 3" />
+    <text x="506" y="788" class="legend-key">通讯枢纽路由</text>
+    <rect x="630" y="776" width="14" height="14" fill="none" stroke="var(--line)" stroke-width="1" stroke-dasharray="6 5" rx="3" />
+    <text x="650" y="788" class="legend-key">职能域</text>
+  </svg>
+</main>
