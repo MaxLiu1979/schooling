@@ -67,7 +67,6 @@ schooling/
 2. **路由层** — 通讯枢纽（跨部门信息路由）
 3. **执行层** — 教学与学生域 · 品牌与表达域 · 运营与支撑域
 
-详见 [architecture.html](./architecture.html) — 十部架构图。
 
 ---
 
