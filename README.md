@@ -1,5 +1,7 @@
 # Schooling · 十部架构
 
+![Schooling Banner](banner.png)
+
 ![Status](https://img.shields.io/badge/status-active-success)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![AI Workflow](https://img.shields.io/badge/focus-school%20workflow-orange)
