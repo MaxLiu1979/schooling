@@ -1,4 +1,4 @@
-# Schooling · 
+# Schooling · 十部架构
 
 ![Status](https://img.shields.io/badge/status-active-success)
 ![License](https://img.shields.io/badge/license-MIT-blue)
@@ -40,33 +40,39 @@ It is not designed to replace teachers.
 
 ---
 
+## 十部架构图 | Architecture Diagram
+
+![Schooling 十部架构](architecture.svg)
+
+*三层结构：战略中枢（校务办公室）→ 路由层（通讯枢纽）→ 执行层（教学与学生域 / 品牌与表达域 / 运营与支撑域）*
+
+---
+
 ## 十部架构 | Ten-Bureau Architecture
 
 ```
 schooling/
-├── framework/              # 十部框架核心
-│   ├── grand-secretariat/  # 校务办公室（原·内阁）
-│   ├── transmission/       # 通讯枢纽（原·通政司）
-│   ├── censorate/          # 学生处（原·都察院）
-│   ├── imperial-college/   # 教务处（原·国子监）
-│   ├── ministry-rites/     # 品牌宣传部（原·礼部）
-│   ├── ministry-revenue/   # 财务与总务处（原·户部）
-│   ├── astronomical/       # 校历与日程管理处（原·钦天监）
-│   ├── imperial-academy/   # 内容创作中心（原·翰林院）
-│   ├── inspection/         # 教育技术中心（原·稽察司）
-│   └── selection-office/   # 任务管理处（原·文选司）
-├── principles/             # 三大核心原则
-├── templates/              # 可复用模板
-├── skills/                 # 教师经验 Skill 化
-├── methodology/            # 方法论文档
-└── docs/                   # 部署与使用指南
+├── framework/                # 十部框架核心
+│   ├── grand-secretariat/    # 校务办公室（战略中枢）
+│   ├── transmission-bureau/  # 通讯枢纽（路由层）
+│   ├── imperial-college/     # 教务处（教学与学生域）
+│   ├── censorate/            # 学生处（教学与学生域）
+│   ├── ministry-of-rites/    # 品牌宣传部（品牌与表达域）
+│   ├── imperial-academy/     # 内容创作中心（品牌与表达域）
+│   ├── selection-office/     # 任务管理处（运营与支撑域）
+│   ├── ministry-of-revenue/  # 财务与总务处（运营与支撑域）
+│   ├── astronomical-bureau/  # 校历与日程管理处（运营与支撑域）
+│   └── inspection-department/# 教育技术中心（运营与支撑域）
+├── principles/               # 三大核心原则
+├── templates/                # 可复用模板
+├── skills/                   # 教师经验 Skill 化
+│   ├── adcote-kede/          # 科德高中融合部介绍
+│   ├── asian-class/          # 亚洲直通车课程体系
+│   ├── headteacher-66days/   # 66天成为优秀班主任
+│   └── goglobal-adcotemax/   # 全球升学路径顾问
+├── methodology/              # 方法论文档
+└── docs/                     # 部署与使用指南
 ```
-
-三层结构：
-1. **战略中枢** — 校务办公室（总控总参、战略排序、风险判断）
-2. **路由层** — 通讯枢纽（跨部门信息路由）
-3. **执行层** — 教学与学生域 · 品牌与表达域 · 运营与支撑域
-
 
 ---
 
