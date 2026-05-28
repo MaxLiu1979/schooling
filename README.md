@@ -12,6 +12,31 @@
 
 ---
 
+# 飞书中的真实学校工作流｜Real School Workflow in Feishu
+
+![Feishu AI Agents](screenshots/feishu-ai-agents.svg)
+
+学校里的 AI，
+不是一个聊天机器人。
+
+它更像：
+- 班主任的提醒系统
+- 学生成长记录系统
+- 风险跟进系统
+- 学校组织记忆系统
+
+---
+
+AI in schools is not just a chatbot.
+
+It becomes:
+- a reminder system
+- a student support system
+- a follow-up system
+- an organizational memory system
+
+---
+
 ## 这是什么 | What is this
 
 Schooling 是一个诞生于真实高中现场的 AI 工作流实验项目，它把学校运营拆解为十个专业化的 AI Agent 部门，每个部门有清晰的职责边界、协同关系和输出标准。
@@ -33,6 +58,35 @@ It is not designed to replace teachers.
 
 ---
 
+## GetNotes：让会议不再消失｜GetNotes: Let Meetings Stop Disappearing
+
+学校每天都在开会。
+
+但绝大部分会议：
+- 没有沉淀
+- 没有跟进
+- 没有组织记忆
+
+GetNotes 做的事情很简单：
+
+把真实发生的会议，
+留下来。
+
+---
+
+Schools hold meetings every day.
+
+But most meetings:
+- disappear
+- are never followed up
+- never become organizational memory
+
+GetNotes does one simple thing:
+
+Preserve real school conversations.
+
+---
+
 ## 学校真正的问题 | Real School Problems
 
 学校从来不缺努力，真正缺的是：
@@ -47,34 +101,6 @@ It is not designed to replace teachers.
 ![Schooling 十部架构](architecture.svg)
 
 *三层结构：战略中枢（校务办公室）→ 路由层（通讯枢纽）→ 执行层（教学与学生域 / 品牌与表达域 / 运营与支撑域）*
-
----
-
-## 十部架构 | Ten-Bureau Architecture
-
-```
-schooling/
-├── framework/                # 十部框架核心
-│   ├── grand-secretariat/    # 校务办公室（战略中枢）
-│   ├── transmission-bureau/  # 通讯枢纽（路由层）
-│   ├── imperial-college/     # 教务处（教学与学生域）
-│   ├── censorate/            # 学生处（教学与学生域）
-│   ├── ministry-of-rites/    # 品牌宣传部（品牌与表达域）
-│   ├── imperial-academy/     # 内容创作中心（品牌与表达域）
-│   ├── selection-office/     # 任务管理处（运营与支撑域）
-│   ├── ministry-of-revenue/  # 财务与总务处（运营与支撑域）
-│   ├── astronomical-bureau/  # 校历与日程管理处（运营与支撑域）
-│   └── inspection-department/# 教育技术中心（运营与支撑域）
-├── principles/               # 三大核心原则
-├── templates/                # 可复用模板
-├── skills/                   # 教师经验 Skill 化
-│   ├── adcote-kede/          # 科德高中融合部介绍
-│   ├── asian-class/          # 亚洲直通车课程体系
-│   ├── headteacher-66days/   # 66天成为优秀班主任
-│   └── goglobal-adcotemax/   # 全球升学路径顾问
-├── methodology/              # 方法论文档
-└── docs/                     # 部署与使用指南
-```
 
 ---
 
