@@ -2,14 +2,18 @@
 
 ![Schooling Banner](banner.png)
 
-![Status](https://img.shields.io/badge/status-active-success)
-![License](https://img.shields.io/badge/license-MIT-blue)
-![AI Workflow](https://img.shields.io/badge/focus-school%20workflow-orange)
-![ClawHub](https://img.shields.io/badge/ClawHub-skills-8A2BE2)
-![Built in Real School](https://img.shields.io/badge/built%20in-real%20school-critical)
+[![Status](https://img.shields.io/badge/status-active-success)](https://github.com/MaxLiu1979/schooling)
+[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![AI Workflow](https://img.shields.io/badge/focus-school%20workflow-orange)](https://github.com/MaxLiu1979/schooling)
+[![Built in Real School](https://img.shields.io/badge/built%20in-real%20school-critical)](https://github.com/MaxLiu1979/schooling)
+[![Website](https://img.shields.io/badge/website-online-brightgreen)](https://maxliu1979.github.io/schooling)
+[![ClawHub](https://img.shields.io/badge/ClawHub-skills-8A2BE2)](https://clawhub.ai/maxliu1979)
 
 > 让学校真实发生的工作，慢慢长成组织记忆。  
 > Let real school work slowly grow into organizational memory.
+
+---
+
 ## 这个 repo 适合谁 | For Whom
 
 | 你是谁 | 这能帮你什么 |
@@ -17,7 +21,24 @@
 | 🏫 **学校管理者** | 一套经过真实验证的 AI + 学校管理工作框架，60+ 实操文档 |
 | 👩‍🏫 **班主任 / 教师** | 学生支持系统、家长沟通策略、情绪管理的完整设计 |
 | 💻 **教育科技开发者** | 十部 Agent 的架构参考、SKILL.md 设计模式、飞书集成方案 |
-| 🤖 **任何想让 AI 在学校真正用起来的人** | 从一所真实高中长出来的案例库 |
+| 🤖 **任何想让 AI 在学校真正用起来的人** | 从一所真实高中长出来的案例库 —— 不是 PPT，是代码和文档 |
+
+---
+
+## 📦 十部技能包 | Skills on ClawHub
+
+这些 Skill 已发布到 ClawHub，和本 project 配套使用：
+
+| Skill | 用途 | 安装 |
+|-------|------|------|
+| [66天成为优秀班主任](https://clawhub.ai/maxliu1979/5star-homeroomteacher-estelle) | 班主任 66 天成长路线图 | `clawhub install estelle-headteacher-66days` |
+| [全球升学路径顾问](https://clawhub.ai/maxliu1979/goglobal-adcotemax) | 中英双语本科升学规划 | `clawhub install goglobal-adcotemax` |
+| [国子监·教务管理](https://clawhub.ai/maxliu1979/kede-amy) | 教学管理 + Cognia 认证 | `clawhub install kede-amy` |
+| [德育-Katherine](https://clawhub.ai/maxliu1979/katherine-kede) | 学生心理与纪律管理 | `clawhub install katherine-kede` |
+| [融合部简介](https://clawhub.ai/maxliu1979/adcote-kede) | 学校介绍与招生咨询 | `clawhub install adcote-kede` |
+| [亚洲直通车](https://clawhub.ai/maxliu1979/asianpathway) | 亚洲留学课程体系 | `clawhub install asianpathway` |
+| [10倍人才·选人用人标准](https://clawhub.ai/maxliu1979/10x-talent-school) | 初建学校教师选、用、育、留体系 | `clawhub install 10x-talent-school` |
+
 ---
 
 # 飞书中的真实学校工作流｜Real School Workflow in Feishu
@@ -125,7 +146,7 @@ between teachers, families, schools, and students.
 
 ## 这是什么 | What is this
 
-Schooling 是一个诞生于真实高中现场的 AI 工作流实验项目，它把学校运营拆解为十个专业化的 AI Agent 部门，每个部门有清晰的职责边界、协同关系和输出标准。
+Schooling 是一个诞生于真实高中现场的 AI 工作流实验项目。它把学校运营拆解为十个专业化的 AI Agent 部门，每个部门有清晰的职责边界、协同关系和输出标准。
 
 Schooling is an experimental AI workflow project built inside a real high school. It decomposes school operations into ten specialized AI Agent bureaus, each with clear boundaries, coordination protocols, and deliverable standards.
 
@@ -163,7 +184,7 @@ It is not designed to replace teachers.
 
 ## 核心工作流 | Core Workflow
 
-```text
+```
 真实沟通                     Real conversation
     ↓
 GetNotes 记录               GetNotes recording
@@ -181,6 +202,22 @@ OpenClaw 整理 + 十部分发     OpenClaw routing via 10 bureaus
 
 ---
 
+## 🚀 快速开始 | Quick Start
+
+| 我想了解 | 从这里开始 |
+|---------|-----------|
+| 🏛️ 十部架构是什么 | `framework/grand-secretariat/` |
+| 🤝 十部怎么配合 | `methodology/十部协同机制.md` |
+| 📝 最常用的模板 | `templates/`（周总结/驾驶舱/请示模板） |
+| 🧪 真实案例 | `docs/real-school-case-01.md` |
+| 📖 核心原则 | `principles/`（AI辅助三原则/信息溯源/时间确认） |
+| 👥 10倍人才管理 | `framework/talent-management/`（教师选人用人评估体系） |
+| 🛠️ 从零开始 | 先读 `methodology/校长判断框架.md`，再走一遍 template |
+
+**技术基础：** 本框架设计为在 OpenClaw 上运行，但方法论可迁移到任何 AI Agent 平台。
+
+---
+
 ## 核心原则
 
 ### AI辅助工作三原则
@@ -194,28 +231,23 @@ OpenClaw 整理 + 十部分发     OpenClaw routing via 10 bureaus
 ### 时间确认
 所有涉及日期、时间的输出必须先确认当前时间。
 
-## 📦 十部技能包 | Skills on ClawHub
-
-这些 Skill 已发布到 ClawHub，和本 project 配套使用：
-
-| Skill | 用途 | 安装 |
-|-------|------|------|
-| [66天成为优秀班主任](https://clawhub.ai/maxliu1979/5star-homeroomteacher-estelle) | 班主任 66 天成长路线图 | `clawhub install estelle-headteacher-66days` |
-| [全球升学路径顾问](https://clawhub.ai/maxliu1979/goglobal-adcotemax) | 中英双语本科升学规划 | `clawhub install goglobal-adcotemax` |
-| [国子监·教务管理](https://clawhub.ai/maxliu1979/kede-amy) | 教学管理 + Cognia 认证 | `clawhub install kede-amy` |
-| [德育-Katherine](https://clawhub.ai/maxliu1979/katherine-kede) | 学生心理与纪律管理 | `clawhub install katherine-kede` |
-| [融合部简介](https://clawhub.ai/maxliu1979/adcote-kede) | 学校介绍与招生咨询 | `clawhub install adcote-kede` |
-| [亚洲直通车](https://clawhub.ai/maxliu1979/asianpathway) | 亚洲留学课程体系 | `clawhub install asianpathway` |
 ---
 
-## 快速开始
+## 📂 项目结构 | Project Structure
 
-1. 阅读 `framework/grand-secretariat/` 了解核心中枢的设计
-2. 阅读 `methodology/十部协同机制.md` 了解十部关系
-3. 根据 `templates/` 中的模板，配置你的第一个 AI Agent
-4. 阅读 `principles/` 了解三个不可妥协的纪律
-
-**技术基础：** 本框架设计为在 OpenClaw 上运行，但方法论可迁移到任何 AI Agent 平台。
+```
+schooling/
+├── README.md
+├── architecture.svg          # 十部架构图
+├── framework/                # 十部框架设计
+├── methodology/              # 方法论与工作法
+├── principles/               # 工作纪律与原则
+├── templates/                # 可复用的工作模板
+├── framework/talent-management/ # 10倍人才教师选育留体系
+├── docs/                     # 案例与实践记录
+├── skills/                   # ClawHub Skill 源文件
+└── screenshots/              # 系统截图
+```
 
 ---
 
@@ -228,8 +260,7 @@ MIT License——你可以自由使用、修改、分发，但请保留作者信
 ## 贡献
 
 欢迎通过 Issues、Discussions、Pull Requests 贡献。详见 CONTRIBUTING.md。
----
 
-## 📂 项目结构 | Project Structure
+---
 
 [![Star History Chart](https://api.star-history.com/svg?repos=MaxLiu1979/schooling&type=Date)](https://star-history.com/#MaxLiu1979/schooling&Date)
