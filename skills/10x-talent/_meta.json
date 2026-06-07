@@ -1,16 +1,17 @@
 {
   "slug": "10x-talent-school",
-  "name": "10倍人才 · 初建学校选人用人标准",
-  "version": "1.0.0",
-  "author": "十部框架 · 人才管理系列",
+  "name": "10倍人才 · 追求倍速增长的初建学校选育用留体系",
+  "version": "2.0.0",
+  "author": "Schooling · 十部架构人才管理模块",
   "tags": [
     "education",
-    "talent-management",
-    "teacher-training",
     "school-management",
+    "talent-management",
     "hr",
     "10x-talent",
-    "ai-era"
+    "ai-era",
+    "schooling",
+    "teacher-training"
   ],
-  "description": "基于《10倍人才》书籍框架，为初建学校（融合部）定制的教师选、用、育、留标准。包含：人才识别3问、成功冲动/破坏冲动评估表、360度管理实操、双帽工作法、月度评估速查表。从一所真实国际学校的校长管理经验中长出来。"
+  "description": "专为追求倍速增长的初建学校设计的教师选、育、用、留四环节体系。基于科德高中融合部真实管理经验，结合十部AI Agent架构，将人才管理从校长个人经验升级为可继承、可协同、可沉淀的组织能力。"
 }
